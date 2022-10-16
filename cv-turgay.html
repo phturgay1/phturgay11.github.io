@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="page.js"></script>
+
+    <button class="open-button" onclick="openForm()">Contact Us</button>
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h3>Contact Us</h3>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    <input type="text" placeholder="Subject" name="text" required>
+
+    <button type="submit" class="btn">Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+    <div class="starter">
+        <nav>
+            <h2 class="logo">My<span> Portfolio</span></h2>
+            <ul class="navbar">
+                <li><a href="#home">Home</li>
+                <li><a href="#about">About</li>
+                <li><a href="#skills">Photography</li>
+            </ul>
+        </nav>
+        <div class="content" id="home">
+            <div class="main-text">
+            <h4>Hey there, My name is</h4>
+            <h1> <span>Turgay</span> <span class="farhad">Farhad</span></h1>
+            <h3>I am a photographer.</h3>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="main">
+            <img src="https://images.pexels.com/photos/358528/pexels-photo-358528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <div class="aboutme">
+                <p>My name is Turgay Farhadli. I am a Computer Science student at ADA University. This website is part of my homework project. I am very enthuasisastic about wildlife photography and decided to design the webpage project on the same idea. Additionally, none of the photos used in interface belongs to me and this page is half real, and half fictional. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="p-skills">  
+            <p> This section of webpage is for demonstration of photography skills. I have travelled many places on the earth and had challenging situations many times to get the most fascinating shots. These photos below are some exaples around the world.
+        </p>
+            </div> 
+        <div class="container">
+            <div class="box">
+              <img src="https://images.pexels.com/photos/2765872/pexels-photo-2765872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+              <span>Pacific</span>
+            </div>
+            <div class="box">
+              <img src="https://images.pexels.com/photos/91216/pexels-photo-91216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+              <span>Alaska</span>
+            </div>
+            <div class="box">
+              <img src="https://images.pexels.com/photos/2450296/pexels-photo-2450296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+              <span>Island</span>
+            </div>
+            <div class="box">
+              <img src="https://images.pexels.com/photos/6676551/pexels-photo-6676551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+              <span>Haiti</span>
+            </div>
+          </div>
+    </section>
+
+    <footer>
+        <div class="socials">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                <a href="https://github.com/phturgay1" class="fa fa-github"></a>
+                <a href="nsadili.html" class="glyphicon glyphicon-user"></a>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <p> All the photos are taken from image stock websites (Pexels.com, and Unsplash.com). This work is part of homework asssignemnt. This page is half real, half fictional. 
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+        
+</body>
+</html>
